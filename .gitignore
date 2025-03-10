@@ -1,10 +1,8 @@
 bin
-obj
+build
 pyTester
 test_images
 main.c
+compile_flags.txt
 *old*
 *.png
-*.cbp
-*.depend
-*.layout

@@ -7,7 +7,7 @@
 #include <zlib.h>
 
 #define PNGdecoder_IMPORT
-#include "PNGdecoder.h"
+#include <PNGdecoder/PNGdecoder.h>
 
 
 
@@ -233,7 +233,7 @@ static void free_raster(void *, void *);
 /*      PUBLIC INTERFACE        */
 
 
-PNGdecoder_result PNGdecoder_openPNG(char * file_name, PNGdecoder_PNG ** result){
+PNGdecoder_result PNGdecoder_openPNG(const char * file_name, PNGdecoder_PNG ** result){
     uint32_t i;
 
     if(file_name == NULL)

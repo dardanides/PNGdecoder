@@ -143,7 +143,7 @@ typedef struct _PNGdecoder_raster_RGBA16_t {
 /*      MODULE INTERFACE        */
 
 
-EXTERN PNGdecoder_result PNGdecoder_openPNG(char *, PNGdecoder_PNG **);
+EXTERN PNGdecoder_result PNGdecoder_openPNG(const char *, PNGdecoder_PNG **);
 EXTERN void PNGdecoder_free(PNGdecoder_PNG *);
 EXTERN const char * PNGdecoder_strerror(PNGdecoder_result);
 
